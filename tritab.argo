@@ -1,0 +1,19 @@
+algorithm tri_array
+var
+i,j,pos,elm : integer;
+arr : array_of integer[i];
+begin
+for i from 0 to arr.length-1 step do
+read(arr[i]);
+end for
+write ("give the element to insert");
+read (elm);
+write ("give the position to insert");
+read (pos);
+j:= arr.length;
+while (j >= pos) do
+arr[j+1]:=arr[j];
+j:=j-1;
+end while
+arr[pos]:=elm;
+end
